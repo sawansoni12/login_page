@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+body{
+background:#f4f5f7;
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+width:360px;
+background:white;
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.center{
+text-align:center;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+margin-bottom:10px;
+font-weight:600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+color:#777;
+font-size:14px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:12px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+outline:none;
+}
+
+input:focus{
+border-color:#6c25ff;
+}
+
+.btn{
+width:100%;
+padding:14px;
+margin-top:16px;
+border:none;
+border-radius:8px;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+transition:0.3s;
+}
+
+.primary{
+background:#6c25ff;
+color:white;
+}
+
+.primary:hover{
+background:#5719d6;
+}
+
+.secondary{
+background:#e6dcff;
+color:#6c25ff;
+}
+
+.secondary:hover{
+background:#d8c9ff;
+}
+
+.disabled{
+background:#d6d6d6;
+color:white;
+}
+
+.back{
+background:none;
+border:none;
+color:#6c25ff;
+font-weight:500;
+cursor:pointer;
+margin-bottom:10px;
+}
+
+.radio{
+margin-top:15px;
+}
+
+.radio label{
+margin-right:15px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.logout{
+color:#ff3b3b;
+font-size:14px;
+cursor:pointer;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:15px;
+}
+
+.profile img{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+
+.about{
+font-size:14px;
+color:#666;
+line-height:1.6;
+}
+
+span{
+color:#6c25ff;
+font-weight:500;
+cursor:pointer;
+}
+
+.about{
+border-top:1px solid #eee;
+padding-top:15px;
+margin-top:15px;
 }
